@@ -1,5 +1,9 @@
 This repository contains my custom macros, commands, configurations, and document formats for my own personal Latex documents.
 
+General:
+
+Outputs your name
+\name
 
 Boxnotes:
 
