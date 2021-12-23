@@ -1,0 +1,25 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{boxnotes}[2021/12/22 Create boxed notes]
+\RequirePackage{todonotes}
+\RequirePackage{tcolorbox}
+
+% Make boxes breakable
+\tcbuselibrary{breakable}
+
+\newenvironment{correction}{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=green!60!black,
+    title=Remark,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newenvironment{boxnote}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=white!60!black,
+    title=#1,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
